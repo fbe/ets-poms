@@ -30,6 +30,14 @@
         </developer>
     </developers>
 
+
+    <scm>
+        <url>https://github.com/fbe/ets-poms</url>
+        <connection>scm:git:git@github.com:fbe/ets-poms.git</connection>
+        <developerConnection>scm:git:git@github.com:fbe/ets-poms.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
     <modules>
         <module>ets-poms-archetype-parent</module>
         <module>ets-poms-module-parent</module>
