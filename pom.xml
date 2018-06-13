@@ -10,7 +10,7 @@
       of any poms - so nothing will be inherited from this POM.
     </description>
 
-    <version>0.1.0</version>
+    <version>0.2.0-SNAPSHOT</version>
     <name>EShop Technology Stack (ETS) - Aggregator POM</name>
 
     <licenses>
@@ -34,7 +34,7 @@
         <url>https://github.com/fbe/ets-poms</url>
         <connection>scm:git:git@github.com:fbe/ets-poms.git</connection>
         <developerConnection>scm:git:git@github.com:fbe/ets-poms.git</developerConnection>
-        <tag>yodelihihi-1.0-1528897316</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
