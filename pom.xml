@@ -38,6 +38,17 @@
         <tag>HEAD</tag>
     </scm>
 
+    <build>
+      <plugins>
+        <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.3</version>
+        </plugin>
+
+      </plugins>
+
+    </build>
     <modules>
         <module>ets-poms-archetype-parent</module>
         <module>ets-poms-module-parent</module>
