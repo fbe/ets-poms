@@ -10,7 +10,7 @@
       of any poms - so nothing will be inherited from this POM.
     </description>
 
-    <version>0.2.0-SNAPSHOT</version>
+    <version>0.2.0</version>
     <name>EShop Technology Stack (ETS) - Aggregator POM</name>
 
     <licenses>
@@ -34,7 +34,7 @@
         <url>https://github.com/fbe/ets-poms</url>
         <connection>scm:git:git@github.com:fbe/ets-poms.git</connection>
         <developerConnection>scm:git:git@github.com:fbe/ets-poms.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>ets-poms-aggregator-0.2.0</tag>
     </scm>
 
     <build>
