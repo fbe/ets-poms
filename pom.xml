@@ -40,14 +40,24 @@
     <build>
       <plugins>
         <plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-release-plugin</artifactId>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
           <version>2.5.3</version>
         </plugin>
-
       </plugins>
-
     </build>
+
+    <distributionManagement>
+      <snapshotRepository>
+        <id>ossrh</id>
+        <url>https://artifactory.peng.gkh-setu.de/felix-ets-snapshot-tests/</url>
+      </snapshotRepository>
+      <repository>
+        <id>ossrh</id>
+        <url>https://artifactory.peng.gkh-setu.de/felix-ets-release-tests/</url>
+      </repository>
+    </distributionManagement>
+
     <modules>
         <module>ets-poms-archetype-parent</module>
         <module>ets-poms-module-parent</module>
