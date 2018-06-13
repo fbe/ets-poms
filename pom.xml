@@ -1,7 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
+    <parent>
+      <groupId>de.kaufhof.ets</groupId>
+      <version>0.2.2-SNAPSHOT</version>
+      <artifactId>ets-poms-aggregator-parent</artifactId>
+      <relativePath>ets-poms-aggregator-parent/</relativePath>
+    </parent>
+
     <modelVersion>4.0.0</modelVersion>
-    <groupId>de.kaufhof.ets</groupId>
     <artifactId>ets-poms-aggregator</artifactId>
     <packaging>pom</packaging>
 
@@ -10,7 +16,6 @@
       of any poms - so nothing will be inherited from this POM.
     </description>
 
-    <version>0.2.2-SNAPSHOT</version>
     <name>EShop Technology Stack (ETS) - Aggregator POM</name>
 
     <licenses>
@@ -37,32 +42,6 @@
         <tag>HEAD</tag>
     </scm>
 
-    <build>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-release-plugin</artifactId>
-          <version>2.5.3</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
-        </plugin>
-      </plugins>
-    </build>
-
-    <distributionManagement>
-      <snapshotRepository>
-        <id>ossrh</id>
-        <url>https://artifactory.peng.gkh-setu.de/felix-ets-snapshot-tests/</url>
-      </snapshotRepository>
-      <repository>
-        <id>ossrh</id>
-        <url>https://artifactory.peng.gkh-setu.de/felix-ets-release-tests/</url>
-      </repository>
-    </distributionManagement>
-
     <modules>
         <module>ets-poms-archetype-parent</module>
         <module>ets-poms-module-parent</module>
@@ -70,6 +49,7 @@
         <module>ets-poms-library-parent</module>
         <module>ets-poms-service-parent</module>
         <module>ets-poms-root-parent</module>
+        <module>ets-poms-aggregator-parent</module>
     </modules>
 
 </project>
